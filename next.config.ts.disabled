@@ -1,0 +1,3 @@
+// Renamed to `next.config.mjs` for Next 13 compatibility.
+// If you need to keep TypeScript config, use a build step to emit a JS config.
+export default {};

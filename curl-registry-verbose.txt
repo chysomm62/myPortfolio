@@ -1,0 +1,25 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    CF-RAY: 9c37ad80d82d985b-LHR
+                    Content-Length: 2
+                    Cache-Control: public, immutable, max-age=31557600
+                    Content-Type: application/json
+                    Date: Sun, 25 Jan 2026 12:...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [CF-RAY, 
+                    9c37ad80d82d985b-LHR], [Content-Length, 2], 
+                    [Cache-Control, public, immutable, 
+                    max-age=31557600]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 2
+
+
+

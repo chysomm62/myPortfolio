@@ -1,0 +1,503 @@
+﻿node.exe : npm verb cli C:\nvm4w\nodejs\node.exe 
+C:\Users\chysomm\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+At line:1 char:1
++ & "C:\nvm4w\nodejs/node.exe" "C:\Users\chysomm\AppData\Roaming\npm/no ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm verb cli C:...\bin\npm-cl 
+   i.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm info using npm@10.4.0
+npm info using node@v24.13.0
+npm verb title npm install framer-motion gray-matter @next/mdx
+npm verb argv "install" "framer-motion" "gray-matter" "@next/mdx" 
+"--loglevel" "verbose"
+npm verb logfile logs-max:10 dir:C:\Users\chysomm\AppData\Local\npm-cache\_
+logs\2026-01-25T12_13_01_711Z-
+npm verb logfile C:\Users\chysomm\AppData\Local\npm-cache\_logs\2026-01-25T
+12_13_01_711Z-debug-0.log
+npm http fetch GET 200 https://registry.npmjs.org/next 985ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 
+238ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 275ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/babel-plugin-react-compiler 245ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/react 246ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/react-dom 263ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/sass 213ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/framer-motion 264ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@emotion%2fis-prop-valid 
+255ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/gray-matter 226ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@next%2fmdx 589ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@mdx-js%2floader 237ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/webpack 257ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@mdx-js%2freact 420ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2freact 254ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2fswc-linux-x64-gnu 369ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc 270ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2fswc-linux-arm64-musl 987ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss 1154ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2fswc-linux-x64-musl 1185ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu 1218ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-arm64 
+1244ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-x64 
+1293ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/enhanced-resolve 231ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lightningcss 237ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/source-map-js 257ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-x64 
+232ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/tapable 250ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lightningcss-freebsd-x64 
+260ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-darwin-arm64 262ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-android-arm64 266ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/graceful-fs 273ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-linux-x64-gnu 276ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-linux-x64-musl 248ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-win32-x64-msvc 246ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-linux-arm64-gnu 254ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf 242ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-win32-arm64-msvc 252ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/lightningcss-linux-arm64-musl 257ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 311ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 244ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 267ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf 318ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl 329ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu 259ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu 270ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl 312ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi 240ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc 247ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 249ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2fscope-manager 289ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree 318ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/typescript 301ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2fvisitor-keys 286ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/minimatch 244ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ts-api-utils 264ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2ftsconfig-utils 271ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2fproject-service 279ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/brace-expansion 233ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@next%2feslint-plugin-next 302ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-jsx-a11y 
+237ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/eslint 227ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jiti 224ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-react 
+226ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/eslint-plugin-react-hooks 257ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ast-types-flow 215ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/damerau-levenshtein 
+219ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/emoji-regex 222ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/aria-query 238ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/axobject-query 240ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/fast-glob 244ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/axe-core 264ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jsx-ast-utils 221ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/string.prototype.includes 222ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/language-tags 237ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/array.prototype.tosorted 
+301ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jsx-ast-utils 244ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/array.prototype.findlast 
+322ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/object.entries 227ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/resolve 232ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/prop-types 254ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/semver 237ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/string.prototype.matchall 248ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/string.prototype.repeat 
+244ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/zod 261ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fparser 277ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 287ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/es-iterator-helpers 
+749ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/hermes-parser 225ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/zod-validation-error 
+219ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/merge2 221ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/micromatch 230ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.stat 239ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/glob-parent 241ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.walk 242ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/supports-preserve-symlinks-flag 224ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/path-parse 238ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/language-subtag-registry 
+219ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/object-assign 238ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/iterator.prototype 241ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/loose-envify 244ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/react-is 263ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-module-transforms 229ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcode-frame 
+235ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-compilation-targets 243ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelpers 247ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fgenerator 254ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2ftraverse 259ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2ftemplate 266ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/gensync 241ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/json5 240ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2ftypes 261ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/convert-source-map 265ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/hermes-estree 471ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jsesc 296ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/js-tokens 300ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/browserslist 303ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-validator-identifier 315ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lru-cache 318ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcompat-data 
+327ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-validator-option 330ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-globals 
+240ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-string-parser 239ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@babel%2fhelper-module-imports 265ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/update-browserslist-db 
+225ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/electron-to-chromium 
+244ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/yallist 276ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/node-releases 277ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/escalade 231ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/picomatch 217ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/braces 234ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.scandir 
+243ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/fastq 252ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/reusify 236ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/run-parallel 255ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/queue-microtask 215ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/fill-range 221ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/to-regex-range 339ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/is-number 265ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2feslint-plugin 397ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2fparser 315ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2futils 282ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ignore 216ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@typescript-eslint%2ftype-utils 262ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-win32-arm64-msvc 241ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-win32-ia32-msvc 247ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-x64-gnu 259ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-x64-musl 266ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-freebsd-x64 249ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-android-arm64 254ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-arm64-gnu 234ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-arm64-musl 248ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-android-arm-eabi 240ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-arm-gnueabihf 
+236ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-arm-musleabihf 
+272ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-ppc64-gnu 236ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-riscv64-gnu 
+247ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-riscv64-musl 
+267ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-linux-s390x-gnu 232ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-darwin-x64 362ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-darwin-arm64 257ms 
+(cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/@unrs%2fresolver-binding-wasm32-wasi 307ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fwasm-runtime 
+246ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@emnapi%2fcore 251ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@emnapi%2fruntime 256ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@tybys%2fwasm-util 264ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@emnapi%2fwasi-threads 
+292ms (cache revalidated)
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-win32-arm64-msvc
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-linux-x64-musl
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-linux-x64-gnu
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-linux-arm64-musl
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-linux-arm64-gnu
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-darwin-x64
+npm verb reify failed optional dependency C:\Users\chysomm\Projects\chysomm
+\my-portfolio\node_modules\@next\swc-darwin-arm64
+npm http fetch GET 200 https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz 
+171ms (cache hit)
+npm http fetch GET 200 
+https://registry.npmjs.org/semver/-/semver-7.7.3.tgz 175ms (cache hit)
+npm http fetch GET 200 
+https://registry.npmjs.org/eslint/-/eslint-9.39.2.tgz 175ms (cache hit)
+npm http fetch GET 200 
+https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 188ms (cache 
+hit)
+npm http fetch POST 200 
+https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 507ms
+npm http fetch GET 200 https://registry.npmjs.org/napi-postinstall 489ms 
+(cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/acorn 496ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/nanoid 496ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/esprima 499ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping 
+500ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz 
+43ms (cache hit)
+npm http fetch GET 200 https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz 
+41ms (cache hit)
+npm http fetch GET 200 
+https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 44ms (cache hit)
+npm http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping/
+-/baseline-browser-mapping-2.9.18.tgz 43ms (cache hit)
+npm http fetch GET 200 
+https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz 239ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/which 943ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/json5/-/json5-1.0.2.tgz 
+1197ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 1217ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/js-yaml 1251ms (cache 
+revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/which/-/which-2.0.2.tgz 
+314ms (cache revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz 28ms (cache hit)
+npm http fetch GET 200 https://registry.npmjs.org/js-yaml 1499ms (cache 
+revalidated)
+npm http fetch GET 200 
+https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.2.tgz 10ms (cache hit)
+npm verb stack Error: AC730000:error:1C800066:Provider 
+routines:ossl_gcm_stream_update:cipher operation 
+failed:openssl\providers\implementations\ciphers\ciphercommon_gcm.c:346:
+npm verb stack 
+npm verb cwd C:\Users\chysomm\Projects\chysomm\my-portfolio
+npm verb Windows_NT 10.0.26200
+npm verb node v24.13.0
+npm verb npm  v10.4.0
+npm ERR! code ERR_SSL_CIPHER_OPERATION_FAILED
+npm ERR! AC730000:error:1C800066:Provider 
+routines:ossl_gcm_stream_update:cipher operation 
+failed:openssl\providers\implementations\ciphers\ciphercommon_gcm.c:346:
+npm ERR! 
+npm verb exit 1
+npm verb unfinished npm timer command:install 1769343181999
+npm verb unfinished npm timer reify 1769343182001
+npm verb unfinished npm timer reify:unpack 1769343222101
+npm verb unfinished npm timer reifyNode:node_modules/next 1769343222102
+npm verb unfinished npm timer reify:rollback:createSparse 1769343231023
+npm verb code 1
+
+npm ERR! A complete log of this run can be found in: C:\Users\chysomm\AppDa
+ta\Local\npm-cache\_logs\2026-01-25T12_13_01_711Z-debug-0.log
