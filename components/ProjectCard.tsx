@@ -1,10 +1,26 @@
-export default function ProjectCard({ title, description }: { title: string; description?: string }) {
+import Link from "next/link";
+
+export default function ProjectCard({
+  slug,
+  title,
+  description,
+}: {
+  slug: string;
+  title: string;
+  description?: string;
+}) {
   return (
-    <article className="p-6 bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.04)] rounded-lg">
-      <h3 className="text-lg font-semibold text-[var(--foreground)]">{title}</h3>
+    <li>
+      <Link
+        href={`/projects/${slug}`}
+        className="text-[var(--foreground)] font-semibold text-lg link-underline hover:text-[var(--accent)]">
+        {title}
+      </Link>
       {description ? (
-        <p className="mt-2 text-sm text-[color:var(--muted)]">{description}</p>
+        <div className="text-xs text-[color:var(--muted)] mt-1">
+          {description}
+        </div>
       ) : null}
-    </article>
+    </li>
   );
 }

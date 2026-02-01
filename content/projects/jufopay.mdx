@@ -1,0 +1,24 @@
+---
+title: "JufoPay"
+description: "A payment integration and dashboard for small businesses."
+date: "2023-11-12"
+repo: "https://github.com/chysomm/jufopay"
+---
+
+JufoPay is a lightweight payments dashboard and API to handle subscriptions and invoicing for small merchants.
+
+## Features
+
+- Recurring billing
+- Webhooks and notifications
+- Simple dashboard for managing customers
+
+## Built with
+
+Next.js, Stripe, and a serverless backend.
+
+```js
+// Initialize
+const client = new JufoPay({ apiKey: process.env.JUFO_KEY });
+await client.createInvoice({ amount: 2500, currency: "USD" });
+```
