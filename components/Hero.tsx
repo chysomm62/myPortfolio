@@ -6,8 +6,7 @@ export default function Hero() {
           Chisom Muorah
         </h1>
         <p className="mt-6 text-lg text-(--muted) max-w-xl">
-          I build minimal, dark interfaces and front-end experiences focused on
-          clarity and performance.
+          Building amazing web experiences
         </p>
         <div className="mt-8">
           <a
