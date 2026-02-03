@@ -53,7 +53,7 @@ export default function Nav() {
   return (
     <>
       <header className="site-nav sticky container max-w-7xl mx-auto top-0 z-50 w-full">
-        <div className="flex items-center justify-between py-3 bg-background">
+        <div className="flex items-center justify-between py-3 bg-background px-5">
           <div className="text-sm font-medium text-gradient text-gradient-animated">
             chysomm
           </div>
