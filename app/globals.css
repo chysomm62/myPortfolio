@@ -150,8 +150,9 @@ html[data-theme="light"] .site-nav {
 .link-underline::after {
   content: "";
   position: absolute;
+
   left: 50%;
-  bottom: -4px;
+  bottom: -3.9px;
   height: 1px;
   width: 90%;
   border-radius: 4px;
