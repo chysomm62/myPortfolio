@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from "./icons";
 import { NAV_LINKS } from "./navLinks";
+import ResumeButton from "./ui/Resumebutton";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -52,24 +53,24 @@ export default function Nav() {
 
   return (
     <>
-      <header className="site-nav sticky container max-w-7xl mx-auto top-0 z-50 w-full">
+      <header className="site-nav sticky container max-w-7xl mx-auto top-0 z-50 w-full ">
         <div className="flex items-center justify-between py-3 bg-background px-5">
           <div className="text-sm font-medium text-gradient text-gradient-animated">
             chysomm
           </div>
 
-          <nav className="flex items-center gap-3 text-sm text-(--muted)">
+          <nav className="flex items-center gap-3 text-sm">
             <div
               className={
                 open
-                  ? ` w-full h-screen fixed top-12 left-0 flex flex-col items-center justify-center gap-8 bg-background md:static md:bg-transparent md:h-auto md:w-auto md:flex-row md:gap-6`
+                  ? `w-full h-screen fixed top-12 left-0 flex flex-col items-center justify-center gap-8 bg-background md:static md:bg-transparent md:h-auto md:w-auto md:flex-row md:gap-6`
                   : "hidden md:flex md:items-center md:gap-6"
               }>
               {NAV_LINKS.map(link => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="hover:text-(--accent) link-underline">
+                  className=" link-underline ">
                   {link.label}
                 </a>
               ))}
@@ -79,11 +80,11 @@ export default function Nav() {
             <button
               aria-label="Toggle theme"
               onClick={() => setTheme(t => (t === "light" ? "dark" : "light"))}
-              className="ml-2 p-2 rounded text-(--muted) hover:bg-[rgba(255,255,255,0.02)] focus:outline-none focus:ring-2 focus:ring-[rgba(100,255,210,0.12)]">
+              className="ml-2 p-2 rounded hover:bg-[rgba(255,255,255,0.02)] focus:outline-none focus:ring-2 focus:ring-[rgba(100,255,210,0.12)]">
               {theme === "light" ? (
-                <SunIcon width={16} height={16} aria-hidden />
-              ) : (
                 <MoonIcon width={16} height={16} aria-hidden />
+              ) : (
+                <SunIcon width={16} height={16} aria-hidden />
               )}
             </button>
 
@@ -99,6 +100,8 @@ export default function Nav() {
                 <MenuIcon width={18} height={18} aria-hidden />
               )}
             </button>
+
+            <ResumeButton />
           </nav>
         </div>
       </header>

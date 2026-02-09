@@ -150,11 +150,10 @@ html[data-theme="light"] .site-nav {
 .link-underline::after {
   content: "";
   position: absolute;
-
   left: 50%;
   bottom: -3.9px;
   height: 1px;
-  width: 90%;
+  width: 60%;
   border-radius: 4px;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
