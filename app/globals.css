@@ -47,6 +47,20 @@ html[data-theme="light"] {
   }
 }
 
+html,
+body {
+  overflow-x: hidden; /* prevent horizontal scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: scroll; /* always reserve vertical scrollbar space */
+  -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome/Safari */
+}
+
 body {
   background:
     radial-gradient(
@@ -70,10 +84,12 @@ body {
   transition:
     background 220ms ease,
     color 220ms ease;
+  -webkit-overflow-scrolling: touch;
 }
 
 button {
   cursor: pointer;
+  outline: none;
 }
 
 /* Gradient utilities */
@@ -164,12 +180,6 @@ html[data-theme="light"] .site-nav {
 .link-underline:hover::after,
 .link-underline:focus::after {
   transform: translateX(-50%) scaleX(1);
-}
-
-/* Focus styles */
-:focus {
-  outline: 2px solid rgba(100, 255, 210, 0.12);
-  outline-offset: 1px;
 }
 
 a {

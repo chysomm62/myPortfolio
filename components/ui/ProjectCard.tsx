@@ -13,13 +13,11 @@ export default function ProjectCard({
     <li>
       <Link
         href={`/projects/${slug}`}
-        className="text-[var(--foreground)] font-semibold text-lg link-underline hover:text-[var(--accent)]">
+        className="text-foreground font-semibold text-lg link-underline hover:text-(--accent)">
         {title}
       </Link>
       {description ? (
-        <div className="text-xs text-[color:var(--muted)] mt-1">
-          {description}
-        </div>
+        <div className="text-xs text-(--muted) mt-1">{description}</div>
       ) : null}
     </li>
   );

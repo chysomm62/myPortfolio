@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Loader from "./Loader";
+import Loader from "../Loader";
 
 export default function PageTransition({
   children,

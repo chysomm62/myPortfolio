@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ui/ProjectCard";
 import { getAllProjects, getAllExperience } from "../lib/content";
 
 export default function Home() {
