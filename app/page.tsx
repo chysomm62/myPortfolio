@@ -8,7 +8,7 @@ export default function Home() {
   const experience = getAllExperience() as any[];
 
   return (
-    <div className="min-h-screen w-full font-sans flex items-center justify-center">
+    <div className="min-h-screen w-full font-sans flex items-center justify-center bg-background text-accent">
       <main className="w-full h-full mx-auto flex items-center justify-center flex-col">
         <Nav />
         <Hero />

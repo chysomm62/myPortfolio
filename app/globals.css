@@ -1,23 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #05040a;
+  --background: #05040d;
   --foreground: #eef0f2;
   /* Muted uses rgba for cross-theme legibility */
   --muted: rgba(238, 240, 242, 0.62);
   --accent: #64ffd2;
   /* Active gradient (Teal → Cyan → Purple → Pink) */
-  /* --accent-gradient: linear-gradient(
-     90deg,
-     #64ffd2 0%,
-     #00e5ff 35%,
-     #7a5cff 70%,
-     #ff7a9e 100%
-   ); */
+  --accent-gradient: linear-gradient(
+    90deg,
+    #64ff22 0%,
+    #08a5ff 35%,
+    #779ccf 70%,
+    #097a9e 100%
+  );
 
   /* 2) Cyan → Blue (clean) */
-  --accent-gradient: linear-gradient(90deg, #00e5ff 0%, #0066ff 100%);
-  --radius: 10px;
+  /* --accent-gradient: linear-gradient(90deg, #00e5ff 0%, #0066ff 100%); */
 }
 
 @theme inline {
@@ -28,7 +27,7 @@
 }
 
 html[data-theme="light"] {
-  --background: #ffffff;
+  --background: #e7e7e7;
   --foreground: #111827;
   --muted: rgba(17, 24, 39, 0.62);
   --accent: #0ea5a4;
@@ -36,14 +35,10 @@ html[data-theme="light"] {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
+    --background: #e7e7e7;
     --foreground: #111827;
     --muted: #6b7280;
     --accent: #0ea5a4;
-  }
-  .div {
-    background: #05040a;
-    color: #eef0f2;
   }
 }
 
