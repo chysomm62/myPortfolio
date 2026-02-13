@@ -52,10 +52,17 @@ export default function Hero() {
             className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gradient">
             Chisom Muorah
           </motion.h1>
-          <motion.p variants={fadeUp} className="text-lg text-accent max-w-xl">
-            Building amazing web experiences
+          <motion.p
+            variants={fadeUp}
+            transition={{ delay: 1 }}
+            className="text-lg text-accent max-w-xl">
+            Product-Driven Frontend Engineer | Turning Ideas into Seamless
+            Digital Experiences
           </motion.p>
-          <motion.div variants={fadeUp} className="flex items-center gap-10">
+          <motion.div
+            variants={fadeUp}
+            transition={{ delay: 2 }}
+            className="flex items-center gap-10">
             <ResumeButton />
           </motion.div>
         </motion.div>
@@ -85,19 +92,19 @@ export default function Hero() {
           <motion.div
             animate={{ rotate: [15, -15, 15] }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute -top-5 -right-5 h-16 w-16 border rounded-lg border-[#08a5ff] rotate-15 bg-[#097a9e]/20 z-10"></motion.div>
+            className="absolute -top-5 -right-5 size-12 md:size-16 border rounded-lg border-[#08a5ff] rotate-15 bg-[#097a9e]/20 z-10"></motion.div>
           <motion.div
             animate={{ rotate: [-15, 15, -15] }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute -left-5 -bottom-5 border h-16 w-16 rounded-lg border-[#779ccf] -rotate-15 z-10 bg-[#64ff22]/20"></motion.div>
+            className="absolute -left-5 -bottom-5 border size-12 md:size-16 rounded-lg border-[#779ccf] -rotate-15 z-10 bg-[#64ff22]/20"></motion.div>
           <motion.div
             animate={{ scale: [1, 0.98, 1] }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute -top-5 -left-5 h-16 w-16 border rounded-lg border-[#08a5ff] rotate-15 bg-[#08a5ff]/50"></motion.div>
+            className="absolute -top-5 -left-5 size-12 md:size-16 border rounded-lg border-[#08a5ff] rotate-15 bg-[#08a5ff]/50"></motion.div>
           <motion.div
             animate={{ scale: [1, 0.98, 1] }}
             transition={{ duration: 10, repeat: Infinity }}
-            className="absolute -right-5 -bottom-5 border h-16 w-16 rounded-lg border-[#779ccf] -rotate-15 bg-[#779ccf]/50"></motion.div>
+            className="absolute -right-5 -bottom-5 border size-12 md:size-16 rounded-lg border-[#779ccf] -rotate-15 bg-[#779ccf]/50"></motion.div>
         </motion.div>
       </motion.div>
     </section>
