@@ -64,6 +64,7 @@ export default function Hero() {
             transition={{ delay: 2 }}
             className="flex items-center gap-10">
             <ResumeButton />
+            <button>Contact Me</button>
           </motion.div>
         </motion.div>
 
