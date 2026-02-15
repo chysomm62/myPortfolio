@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from "./icons";
-import { NAV_LINKS } from "./navLinks";
+import { NAV_LINKS } from "../lib/navLinks";
 import ResumeButton from "./ui/Resumebutton";
 
 export default function Nav() {
