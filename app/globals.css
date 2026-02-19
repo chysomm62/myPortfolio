@@ -206,3 +206,14 @@ html[data-theme="light"] .site-nav {
 a {
   color: inherit;
 }
+
+.menu {
+  height: -webkit-fill-available;
+  height: calc(100dvh-16px);
+}
+
+@media (min-width: 1024px) {
+  nav .subMenu {
+    height: auto !important;
+  }
+}
