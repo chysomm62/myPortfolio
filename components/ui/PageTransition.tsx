@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Loader from "./Loader";
 
 export default function PageTransition({
@@ -11,11 +11,18 @@ export default function PageTransition({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const [loading, setLoading] = useState(true);
+  const isFirstMount = useRef(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    // Skip loader on first render
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
+
     setLoading(true);
-    const timeout = setTimeout(() => setLoading(false), 2000);
+    const timeout = setTimeout(() => setLoading(false), 800);
     return () => clearTimeout(timeout);
   }, [pathname]);
 
@@ -28,7 +35,7 @@ export default function PageTransition({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}>
+          transition={{ duration: 0.4 }}>
           {children}
         </motion.div>
       </AnimatePresence>

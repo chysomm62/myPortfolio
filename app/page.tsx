@@ -13,7 +13,7 @@ export default function Home() {
         <Nav />
         <Hero />
 
-        <section id="projects" className="mt-12">
+        <section id="projects" className="scroll-mt-24">
           <h2 className="text-sm font-medium text-(--muted)">
             Selected projects
           </h2>
@@ -29,7 +29,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section id="experience" className="mt-16">
+        <section id="experience" className="scroll-mt-24">
           <h2 className="text-sm font-medium text-(--muted)">Experience</h2>
           <ul className="mt-6 space-y-4 text-(--muted)">
             {experience.slice(0, 6).map(e => (

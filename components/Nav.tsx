@@ -5,6 +5,7 @@ import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from "./icons";
 import { NAV_LINKS } from "../lib/navLinks";
 import ResumeButton from "./ui/Resumebutton";
 import router from "next/router";
+import Link from "next/link";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -81,7 +82,7 @@ export default function Nav() {
                     key={i}
                     onClick={() => setOpen(false)}
                     className="link-underline text-base w-fit">
-                    <a href={link.href}>{link.label}</a>
+                    <Link href={link.href}>{link.label}</Link>
                   </li>
                 ))}{" "}
                 <ResumeButton className="mt-auto lg:mt-0" />
