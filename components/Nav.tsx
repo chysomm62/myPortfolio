@@ -6,14 +6,43 @@ import { NAV_LINKS } from "../lib/navLinks";
 import ResumeButton from "./ui/Resumebutton";
 import router from "next/router";
 import Link from "next/link";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
-  const linkClick = (link: string) => {
-    setOpen(false);
-    router.push(link);
+  const menuVariants: Variants = {
+    closed: {
+      opacity: 0,
+      y: -15,
+      transition: {
+        duration: 0.35,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1],
+        staggerChildren: 0.08,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const linkVariants: Variants = {
+    closed: { opacity: 0, y: 20 },
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
   };
 
   useEffect(() => {
@@ -58,7 +87,7 @@ export default function Nav() {
   }, [open]);
 
   return (
-    <>
+    <AnimatePresence>
       <nav
         className={`site-nav container max-w-7xl mx-auto shadow-none transition-shadow duration-300 fixed w-full top-0 z-50  lg:pb-0 ${open && "bottom-0"}`}>
         <div
@@ -70,24 +99,35 @@ export default function Nav() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-3 text-sm">
-            <div
+            <motion.div
+              initial={false}
+              animate={open ? "open" : false}
+              variants={menuVariants}
               className={
                 open
                   ? `lg:w-full flex items-center flex-col lg:h-auto lg:flex-row lg:justify-between lg:bg-transparent lg:p-0 z-10 transition duration-700 ease-in-out absolute top-20 left-5 right-5 bottom-5 lg:relative`
-                  : "hidden w-full lg:flex items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between transition duration-500 ease-in-out subMenu"
+                  : "hidden w-full lg:flex lg:opacity-100 items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between transition duration-500 ease-in-out subMenu"
               }>
-              <ul className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-8 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
+              <motion.ul
+                variants={menuVariants}
+                className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-8 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
                 {NAV_LINKS.map((link, i) => (
-                  <li
+                  <motion.li
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={open ? "open" : false}
+                    variants={linkVariants}
                     key={i}
                     onClick={() => setOpen(false)}
                     className="link-underline text-base w-fit">
                     <Link href={link.href}>{link.label}</Link>
-                  </li>
-                ))}{" "}
-                <ResumeButton className="mt-auto lg:mt-0" />
-              </ul>
-            </div>
+                  </motion.li>
+                ))}
+                <ResumeButton
+                  className="mt-auto lg:mt-0"
+                  variant={linkVariants}
+                />
+              </motion.ul>
+            </motion.div>
 
             {/* Theme toggle */}
             <button
@@ -116,6 +156,6 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-    </>
+    </AnimatePresence>
   );
 }

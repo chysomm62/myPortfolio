@@ -64,14 +64,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-[70vh] container mx-auto px-5 lg:px-14 max-w-7xl mt-24 lg:mt-36 flex">
+    <section className="min-h-[70vh] container mx-auto px-5 lg:px-14 max-w-7xl mt-32 lg:mt-36 flex">
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className="grid lg:grid-cols-2 items-center gap-12 lg:gap-20 w-full ">
+        className="grid lg:grid-cols-2 items-center gap-16 lg:gap-20 w-full ">
         {/* LEFT SIDE */}
         <motion.div variants={fadeUp} className="flex flex-col gap-7">
           <motion.h1
