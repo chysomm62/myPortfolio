@@ -4,46 +4,12 @@ import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from "./icons";
 import { NAV_LINKS } from "../lib/navLinks";
 import ResumeButton from "./ui/Resumebutton";
-import router from "next/router";
 import Link from "next/link";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">("dark");
-
-  const menuVariants: Variants = {
-    closed: {
-      opacity: 0,
-      y: -15,
-      transition: {
-        duration: 0.35,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
-    open: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
-        staggerChildren: 0.08,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const linkVariants: Variants = {
-    closed: { opacity: 0, y: 20 },
-    open: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
-  };
 
   useEffect(() => {
     try {
@@ -90,44 +56,74 @@ export default function Nav() {
     <AnimatePresence>
       <nav
         className={`site-nav container max-w-7xl mx-auto shadow-none transition-shadow duration-300 fixed w-full top-0 z-50  lg:pb-0 ${open && "bottom-0"}`}>
-        <div
-          className={`py-4 md:py-6 bg-background px-5 lg:px-14 max-w-7xl mx-auto shadow-12 flex justify-between items-start lg:items-center  rounded-2xl relative shadow-[inset_6px_6px_200px_gba(150,150,150,0.25), inset_-6px_-6px_20px_rgba(150,150,150,0.45)] ${
+        <motion.div
+          // initial={false}
+          // animate={
+          //   open
+          //     ? { y: 0 }
+          //     : window.innerWidth < 1024
+          //       ? { y: "-100%" }
+          //       : { y: 0 }
+          // }
+          // transition={{
+          //   duration: 1.45,
+          //   ease: [0.22, 1, 0.36, 1],
+          // }}
+          className={`py-4 md:py-6 bg-background px-5 lg:px-14 max-w-7xl mx-auto shadow-12 flex justify-between items-start lg:items-center ${
             open ? "menu overflow-y-auto" : "h-22"
           }`}>
-          <div className="text-lg font-semibold text-gradient text-gradient-animated">
+          <div className="text-lg leading-8 font-semibold text-gradient text-gradient-animated">
             chysomm
           </div>
 
           <div className="flex items-center gap-2 md:gap-3 text-sm">
-            <motion.div
-              initial={false}
-              animate={open ? "open" : false}
-              variants={menuVariants}
+            <div
               className={
                 open
                   ? `lg:w-full flex items-center flex-col lg:h-auto lg:flex-row lg:justify-between lg:bg-transparent lg:p-0 z-10 transition duration-700 ease-in-out absolute top-20 left-5 right-5 bottom-5 lg:relative`
                   : "hidden w-full lg:flex lg:opacity-100 items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between transition duration-500 ease-in-out subMenu"
               }>
-              <motion.ul
-                variants={menuVariants}
-                className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-8 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
+              <ul className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-8 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
                 {NAV_LINKS.map((link, i) => (
                   <motion.li
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={open ? "open" : false}
-                    variants={linkVariants}
+                    initial={false}
+                    animate={
+                      open
+                        ? { opacity: 1, y: 0 }
+                        : window.innerWidth < 1024
+                          ? { opacity: 0, y: 15 }
+                          : { opacity: 1, y: 0 }
+                    }
+                    transition={{
+                      duration: 0.4,
+                      ease: [0.22, 1, 0.36, 1],
+                      delay: open ? i * 0.08 : 0,
+                    }}
                     key={i}
                     onClick={() => setOpen(false)}
-                    className="link-underline text-base w-fit">
+                    className="link-underline text-base w-fit font-medium hover:font-semibold">
                     <Link href={link.href}>{link.label}</Link>
                   </motion.li>
                 ))}
-                <ResumeButton
-                  className="mt-auto lg:mt-0"
-                  variant={linkVariants}
-                />
-              </motion.ul>
-            </motion.div>
+                <motion.div
+                  initial={false}
+                  animate={
+                    open
+                      ? { opacity: 1, y: 0 }
+                      : window.innerWidth < 1024
+                        ? { opacity: 0, y: 15 }
+                        : { opacity: 1, y: 0 }
+                  }
+                  transition={{
+                    duration: 0.4,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.5,
+                  }}
+                  className="mt-auto lg:mt-0">
+                  <ResumeButton className="w-full" />
+                </motion.div>
+              </ul>
+            </div>
 
             {/* Theme toggle */}
             <button
@@ -154,7 +150,7 @@ export default function Nav() {
               )}
             </button>
           </div>
-        </div>
+        </motion.div>
       </nav>
     </AnimatePresence>
   );
