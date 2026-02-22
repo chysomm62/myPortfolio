@@ -81,8 +81,14 @@ export default function Hero() {
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg text-accent max-w-xl">
             Product-Driven Frontend Engineer | Turning Ideas into Seamless
-            Digital Experiences
+            Digital Experiences.
           </motion.p>
+          <motion.p variants={fadeUp} className="text-lg text-accent max-w-xl">
+            I build fast, scalable web applications that drive real business
+            results. Clean architecture, refined interfaces, and
+            performance-first development — built to grow with you.
+          </motion.p>
+
           <motion.div variants={fadeUp} className="flex items-center gap-10">
             <ResumeButton />
             <button
