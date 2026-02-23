@@ -1,7 +1,8 @@
-import Hero from "../components/Hero";
-import Nav from "../components/Nav";
-import ProjectCard from "../components/ui/ProjectCard";
-import { getAllProjects, getAllExperience } from "../lib/content";
+import About from "@/components/About";
+import Hero from "@/components/Hero";
+import Nav from "@/components/Nav";
+import ProjectCard from "@/components/ui/ProjectCard";
+import { getAllProjects, getAllExperience } from "@/lib/content";
 
 export default function Home() {
   const projects = getAllProjects() as any[];
@@ -12,6 +13,7 @@ export default function Home() {
       <main className="w-full h-full mx-auto flex items-center justify-center flex-col">
         <Nav />
         <Hero />
+        <About />
 
         <section id="projects" className="scroll-mt-24">
           <h2 className="text-sm font-medium text-(--muted)">
