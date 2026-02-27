@@ -88,7 +88,7 @@ export const metadata = {
 
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.chisommuorah.vercel.app/",
   },
 
   robots: {

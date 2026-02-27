@@ -105,7 +105,7 @@ export default function Hero() {
 
         <motion.div
           variants={imageReveal}
-          className="relative aspect-570/650 lg:max-w-120">
+          className="relative aspect-570/650 lg:max-w-120 p-7">
           <Image
             src="https://res.cloudinary.com/dfyo6umic/image/upload/f_auto,q_auto/v1770904189/profile_image.png"
             alt="profile image"
