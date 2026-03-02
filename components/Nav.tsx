@@ -86,19 +86,19 @@ export default function Nav() {
               <ul className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-8 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
                 {NAV_LINKS.map((link, i) => (
                   <motion.li
-                    initial={false}
-                    animate={
-                      open
-                        ? { opacity: 1, y: 0 }
-                        : window.innerWidth < 1024
-                          ? { opacity: 0, y: 15 }
-                          : { opacity: 1, y: 0 }
-                    }
-                    transition={{
-                      duration: 0.4,
-                      ease: [0.22, 1, 0.36, 1],
-                      delay: open ? i * 0.08 : 0,
-                    }}
+                    // initial={false}
+                    // animate={
+                    //   open
+                    //     ? { opacity: 1, y: 0 }
+                    //     : window.innerWidth < 1024
+                    //       ? { opacity: 0, y: 15 }
+                    //       : { opacity: 1, y: 0 }
+                    // }
+                    // transition={{
+                    //   duration: 0.4,
+                    //   ease: [0.22, 1, 0.36, 1],
+                    //   delay: open ? i * 0.08 : 0,
+                    // }}
                     key={i}
                     onClick={() => setOpen(false)}
                     className="link-underline text-base w-fit font-medium hover:font-semibold">
@@ -106,19 +106,19 @@ export default function Nav() {
                   </motion.li>
                 ))}
                 <motion.div
-                  initial={false}
-                  animate={
-                    open
-                      ? { opacity: 1, y: 0 }
-                      : window.innerWidth < 1024
-                        ? { opacity: 0, y: 15 }
-                        : { opacity: 1, y: 0 }
-                  }
-                  transition={{
-                    duration: 0.4,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: 0.5,
-                  }}
+                  // initial={false}
+                  // animate={
+                  //   open
+                  //     ? { opacity: 1, y: 0 }
+                  //     : window.innerWidth < 1024
+                  //       ? { opacity: 0, y: 15 }
+                  //       : { opacity: 1, y: 0 }
+                  // }
+                  // transition={{
+                  //   duration: 0.4,
+                  //   ease: [0.22, 1, 0.36, 1],
+                  //   delay: 0.5,
+                  // }}
                   className="mt-auto lg:mt-0">
                   <ResumeButton className="w-full" />
                 </motion.div>

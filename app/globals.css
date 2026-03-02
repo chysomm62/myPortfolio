@@ -4,7 +4,7 @@
   --background: #05040d;
   --foreground: #eef0f2;
   /* Muted uses rgba for cross-theme legibility */
-  --muted: rgba(238, 240, 242, 0.62);
+  --muted: rgba(238, 240, 242, 0.75);
   --accent: #64ffd2;
   /* Active gradient (Teal → Cyan → Purple → Pink) */
   --accent-gradient: linear-gradient(
@@ -36,7 +36,7 @@
 html[data-theme="light"] {
   --background: #f7f7f7;
   --foreground: #111827;
-  --muted: rgba(17, 24, 39, 0.62);
+  --muted: rgba(17, 24, 39, 0.75);
   --accent: #0ea5a4;
 }
 

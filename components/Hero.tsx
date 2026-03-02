@@ -64,7 +64,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-[70vh] container mx-auto px-5 lg:px-14 max-w-7xl mt-32 lg:mt-36 flex">
+    <section className="container mx-auto px-5 lg:px-14 max-w-7xl mt-32 lg:mt-36 flex">
       <motion.div
         variants={container}
         initial="hidden"
