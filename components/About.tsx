@@ -1,47 +1,73 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section id="about" className="py-24 px-6 max-w-4xl mx-auto">
-      <p className="text-sm uppercase tracking-widest text-neutral-500 mb-3">
-        About
-      </p>
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 0.8, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-sm uppercase tracking-widest mb-3 opacity-80">
+        About Me
+      </motion.p>
 
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-8">
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.1 }}
+        className="text-3xl md:text-4xl font-semibold tracking-tight mb-8">
         Building Digital Products That Perform
-      </h2>
+      </motion.h2>
 
-      <p className="text-lg leading-relaxed text-neutral-700 mb-6">
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 0.7, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="text-lg leading-relaxed opacity-70 mb-6">
         I’m a frontend-focused software developer who builds modern web
         applications that are fast, scalable, and engineered for real-world
         impact. I specialize in transforming ideas into production-ready digital
         products that combine clean architecture, refined design, and
         performance-first development.
-      </p>
+      </motion.p>
 
-      <p className="text-lg leading-relaxed text-neutral-700 mb-10">
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 0.7, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        className="text-lg leading-relaxed opacity-70 mb-10">
         My work goes beyond writing code. I focus on solving business problems
         through thoughtful user experience, optimized performance, and long-term
         maintainability. Every solution I build is structured with clarity,
         scalability, and growth in mind.
-      </p>
+      </motion.p>
 
-      <div className="grid md:grid-cols-2 gap-6 text-neutral-700 leading-relaxed mb-12">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 0.7, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="grid md:grid-cols-2 gap-6 opacity-70 leading-relaxed mb-12">
         <p>• Clean, maintainable architecture</p>
         <p>• Responsive across all devices</p>
         <p>• Performance and SEO optimized</p>
         <p>• Accessible and user-focused</p>
         <p>• Built with modern, industry-standard technologies</p>
         <p>• Designed for long-term scalability</p>
-      </div>
+      </motion.div>
 
-      <p className="text-lg leading-relaxed text-neutral-700">
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 0.7, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+        className="text-lg leading-relaxed opacity-70">
         Whether working with startups, agencies, or established organizations, I
         bring structure, accountability, and a results-driven mindset to every
         engagement. If you’re looking for a developer who understands both
         technical depth and business impact, I’m ready to help you build
         something exceptional.
-      </p>
+      </motion.p>
     </section>
   );
 };

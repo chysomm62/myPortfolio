@@ -1,11 +1,11 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
+import Projects from "@/components/Projects";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { getAllProjects, getAllExperience } from "@/lib/content";
 
 export default function Home() {
-  const projects = getAllProjects() as any[];
   const experience = getAllExperience() as any[];
 
   return (
@@ -15,21 +15,7 @@ export default function Home() {
         <Hero />
         <About />
 
-        <section id="projects" className="scroll-mt-24">
-          <h2 className="text-sm font-medium text-(--muted)">
-            Selected projects
-          </h2>
-          <ul className="mt-6 space-y-6">
-            {projects.slice(0, 6).map(p => (
-              <ProjectCard
-                key={p.slug}
-                slug={p.slug}
-                title={p.title || p.slug}
-                description={p.description || p.excerpt}
-              />
-            ))}
-          </ul>
-        </section>
+        <Projects />
 
         <section id="experience" className="scroll-mt-24">
           <h2 className="text-sm font-medium text-(--muted)">Experience</h2>
