@@ -17,7 +17,7 @@ export default function ProjectCard({
   return (
     <motion.div
       key={project.slug}
-      className="absolute inset-0 rounded-3xl overflow-hidden bg-neutral-900 shadow-2xl"
+      className="rounded-3xl overflow-hidden bg-background shadow-[5px_5px_10px_rgba(20,250,150,0.25),-5px_-5px_10px_rgba(50,150,250,0.25)]"
       style={{
         zIndex: projects.length - index,
       }}
@@ -25,23 +25,30 @@ export default function ProjectCard({
       whileInView={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}>
       {project.image && (
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover opacity-40"
-        />
+        <div className="relative w-full aspect-video">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover opacity-40"
+          />
+        </div>
       )}
 
-      <div className="absolute inset-0 p-12 flex flex-col justify-end bg-linear-to-t from-black/80 to-transparent">
+      <div className="p-5 flex flex-col justify-end">
         <h3 className="text-3xl font-semibold mb-4">{project.title}</h3>
 
         <p className="opacity-70 mb-6 max-w-lg">{project.description}</p>
 
+        <div className="flex gap-x-8 gap-y-2 mb-5 flex-wrap">
+          {project.tags &&
+            project.tags.map(tag => <p className="text-xs ">{tag}</p>)}
+        </div>
+
         <div className="flex gap-6">
           {project.website && (
             <Link href={project.website} target="_blank" className="underline">
-              Live
+              Live Link
             </Link>
           )}
 
@@ -50,10 +57,6 @@ export default function ProjectCard({
               Code
             </Link>
           )}
-
-          <Link href={`/projects/${project.slug}`} className="underline">
-            Details
-          </Link>
         </div>
       </div>
     </motion.div>

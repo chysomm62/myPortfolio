@@ -14,7 +14,6 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
-
         <Projects />
 
         <section id="experience" className="scroll-mt-24">
