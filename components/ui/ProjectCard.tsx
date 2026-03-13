@@ -30,6 +30,7 @@ export default function ProjectCard({
             src={project.image}
             alt={project.title}
             fill
+            sizes="100%"
             className="object-cover opacity-40"
           />
         </div>

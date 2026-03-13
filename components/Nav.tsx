@@ -55,7 +55,7 @@ export default function Nav() {
   return (
     <AnimatePresence>
       <nav
-        className={`site-nav container max-w-7xl mx-auto shadow-none transition-shadow duration-300 fixed w-full top-0 z-50  lg:pb-0 ${open && "bottom-0"}`}>
+        className={`site-nav container max-w-7xl mx-auto transition-shadow duration-300 fixed w-full top-0 z-50 lg:pb-0 shadow-[5px_5px_10px_rgba(20,250,150,0.25),-5px_-5px_10px_rgba(50,150,250,0.25)] ${open && "bottom-0"}`}>
         <motion.div
           // initial={false}
           // animate={
@@ -142,7 +142,7 @@ export default function Nav() {
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen(o => !o)}
-              className="p-2 rounded outline-none md:hidden">
+              className="p-2 rounded outline-none lg:hidden">
               {open ? (
                 <CloseIcon width={18} height={18} aria-hidden />
               ) : (
